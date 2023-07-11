@@ -1,0 +1,88 @@
+.game {
+  background: #27374d;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.game h1 {
+  font-size: 2.5em;
+}
+
+.points span {
+  font-weight: bold;
+}
+.tip span {
+  color: #f5f5f5;
+}
+
+.wordContainer {
+  margin: 1.5em;
+  padding: 1.5em;
+  border: 20px solid #f5f5f5;
+  display: flex;
+}
+
+.letter,
+.blankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+}
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+}
+@media (max-width: 1100px) {
+  .game {
+    width: 80%;
+  }
+  .wordContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .letter,
+  .blankSquare {
+    font-size: 35px;
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .game h1 {
+    font-size: 1.5em;
+  }
+  .game {
+    width: 60%;
+  }
+  .wordContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .letter,
+  .blankSquare {
+    font-size: 28px;
+    height: 40px;
+    width: 40px;
+  }
+}
